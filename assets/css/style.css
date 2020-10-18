@@ -334,4 +334,11 @@
     .header-content p {
         font-size: 1rem;
     }
+    #hero .header-logo {
+        width: 200px;
+        height: 36px;
+    }
+    #hero .header-content h1 {
+        font-size: 35px;
+    }
 }
