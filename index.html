@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <script src="/assets/js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+  <script src="https://unpkg.com/i18next@19.0.0/dist/umd/i18next.js"></script>
+  <script src="assets/js/i18nextBrowserLanguageDetector.min.js"></script>
+  <script src="assets/js/jquery-i18next.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <title>WellComp - Jin Nakazawa Lab </title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg my-nav" id="main-nav">
+    <a class="navbar-brand" href="#">WellComp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#members">Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#joinus">Join Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" data-i18n="nav_language">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" onclick="i18next.changeLanguage('ja')" data-reload>日本語</a>
+            <a class="dropdown-item" onclick="i18next.changeLanguage('en')" data-reload>English</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="video-header wrap">
+      <div class="fullscreen-video-wrap d-none d-md-block">
+        <video src="assets/videos/hero.mp4" autoplay loop></video>
+      </div>
+
+      <div class="fullscreen-video-wrap d-block d-md-none">
+        <img src="/assets/images/hero_sp.jpg" alt="Delta">
+      </div>
+
+
+      <div class="header-overlay">
+        <div class="header-content" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0" data-aos-once="true">
+          <img class="header-logo" src="/assets/images/jinlogo.png" alt="Jin Nakazawa Lab Logo" width="300" height="54">
+          <h1>WellComp</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
+    <div class="container">
+      <div class="col text-center">
+        <h1 class="section-sub-header">WHO WE ARE</h1>
+        <h1 lang="en" class="section-header">About</h1>
+      </div>
+      <div class="col section-text">
+        <p data-i18n="about_wellcomp">
+        </p>
+      </div>
+    </div>
+
+    <div style="position:relative; background-color:#faf6ff;">
+      <div class="custom-shape-divider-bottom-1602937224">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="col text-center" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" data-aos-once="true">
+        <h1 class="section-sub-header">WHAT WE DO</h1>
+        <h1 class="section-header">Projects</h1>
+      </div>
+      <div class="col">
+        <div class="row justify-content-center cards-all">
+          <div class="col-lg-3 col-md-4 card" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0"
+            data-aos-once="true">
+            <img src="/assets/images/apple.jpg" alt="Apple">
+            <h1 data-i18n="projects_header_1"></h1>
+            <p data-i18n="projects_description_1"></p>
+          </div>
+          <div class="col-lg-3 col-md-4 card" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0"
+            data-aos-once="true">
+            <img src="/assets/images/apple.jpg" alt="Apple">
+            <h1 data-i18n="projects_header_2"></h1>
+            <p data-i18n="projects_description_2"></p>
+          </div>
+          <div class="col-lg-3 col-md-4 card" data-aos="fade-up" data-aos-delay="800" data-aos-offset="0"
+            data-aos-once="true">
+            <img src="/assets/images/apple.jpg" alt="Apple">
+            <h1 data-i18n="projects_header_3"></h1>
+            <p data-i18n="projects_description_3"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative; background-color:#faf6ff;">
+      <div class="custom-shape-divider-bottom-1602937784">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="members">
+    <div class="container">
+      <div class="col text-center" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" data-aos-once="true">
+        <h1 class="section-header">Members</h1>
+      </div>
+      <div class="col">
+        <div class="row justify-content-center members-all" data-aos="fade-up" data-aos-delay="800" data-aos-offset="0"
+          data-aos-once="true">
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/jin.jpg" alt="中澤仁">
+            <h1 class="text-center">Jin Nakazawa</h1>
+            <h2 class="text-center">Professor</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/slash.jpg" alt="大越正">
+            <h1 class="text-center"><a target="_blank" rel="noopener noreferrer" href="http://www.okoshi.org/">Tadashi
+                Okoshi</a></h1>
+            <h2 class="text-center">Proj. Associate Professor</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/yin.jpg" alt="陳寅">
+            <h1 class="text-center">Yin Chen</h1>
+            <h2 class="text-center">Proj. Lecturer</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/tomotaka.jpg" alt="伊藤友隆">
+            <h1 class="text-center">Tomotaka Ito</h1>
+            <h2 class="text-center">Researcher</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/tsuge.jpg" alt="柘植晃">
+            <h1 class="text-center">Akira Tsuge</h1>
+            <h2 class="text-center">Researcher</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/wataru.jpg" alt="佐々木航">
+            <h1 class="text-center"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.ht.sfc.keio.ac.jp/~wataru/">Wataru Sasaki</a></h1>
+            <h2 class="text-center">D3</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/shiba.jpg" alt="羽柴彩月">
+            <h1 class="text-center"><a target="_blank" rel="noopener noreferrer"
+                href="https://www.ht.sfc.keio.ac.jp/~shiba/portfolio/">Satsuki Hashiba</a></h1>
+            <h2 class="text-center">M1</h1>
+          </div>
+          <!-- Member End -->
+          <!-- Member Start -->
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6 profile">
+            <img src="/assets/images/members/kenty.jpg" alt="勝又健登">
+            <h1 class="text-center"><a target="_blank" rel="noopener noreferrer" href="https://kenty.io/">Kento
+                Katsumata</a></h1>
+            <h2 class="text-center">M1</h1>
+          </div>
+          <!-- Member End -->
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative; background-color:#faf6ff;">
+      <div class="custom-shape-divider-bottom-1602938112">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="joinus">
+    <div class="container">
+      <div class="col text-center" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" data-aos-once="true">
+        <h1 class="section-header">Join Us</h1>
+      </div>
+      <div class="col section-text">
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-5 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="800" data-aos-offset="0"
+            data-aos-once="true">
+            <p>
+              <span style="font-weight: 700;" data-i18n="joinus_required_header"></span>
+            </p>
+            <p data-i18n="joinus_required_description">
+            <ul>
+              <li data-i18n="joinus_required_description_1"></li>
+              <li data-i18n="joinus_required_description_2"></li>
+            </ul>
+          </div>
+
+          <div class="col col-lg-4 col-md-6 col-sm-6" data-aos="fade-up" data-aos-delay="900" data-aos-offset="0"
+            data-aos-once="true">
+            <p>
+              <span style="font-weight: 700;" data-i18n="joinus_eligibilty_header"></span>
+            </p>
+            <ul>
+              <li data-i18n="joinus_eligibilty_description_1">
+              </li>
+              <li data-i18n="joinus_eligibilty_description_2">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="position:relative; background-color:#f7c25d;">
+      <div class="custom-shape-divider-bottom-1602938731">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="col text-center">
+        <h1 class="section-header">Contact</h1>
+      </div>
+      <div class="col contact-info section-text text-center">
+        <p>
+          <a href="mailto: well-comp@ht.sfc.keio.ac.jp"
+            style="color:white; text-decoration: underline;">well-comp@ht.sfc.keio.ac.jp</a>
+        </p>
+        <p data-i18n="contact_address">Keio University Shonan Fujisawa CampusΔSouth Room-213
+        </p>
+        <p>&copy; <span id="year"></span> Jin Nakazawa Laboratory</p>
+      </div>
+    </div>
+  </section>
+
+  <script src=" http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    AOS.init();
+
+    i18next
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        fallbackLng: 'en',
+        debug: true,
+        resources: {
+          en: {
+            translation: {
+              nav_language: '🇺🇸',
+              about_section_header: 'About',
+              about_wellcomp: 'The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives. The group is developing technologies (infrastructure systems, services and applications) for capturing and understanding people’s contexts and for realizing people’s behavior change towards better/desired condition, using various methodologies including mobile, wearable and participatory sensing, ML-based data intelligence, information notification and actuation.',
+              projects_header_1: 'Project 1',
+              projects_description_1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et libero vulputate, aliquet lacus interdum, finibus enim. Nulla at orci interdum ligula pharetra mollis ac vehicula leo. Aenean non interdum felis. Suspendisse nec turpis efficitur, interdum dolor sed, finibus mi. Cras pretium ligula et nunc malesuada, quis sodales urna',
+              projects_header_2: 'Project 2',
+              projects_description_2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et libero vulputate, aliquet lacus interdum, finibus enim. Nulla at orci interdum ligula pharetra mollis ac vehicula leo. Aenean non interdum felis. Suspendisse nec turpis efficitur, interdum dolor sed, finibus mi. Cras pretium ligula et nunc malesuada, quis sodales urna',
+              projects_header_3: 'Project 3',
+              projects_description_3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et libero vulputate, aliquet lacus interdum, finibus enim. Nulla at orci interdum ligula pharetra mollis ac vehicula leo. Aenean non interdum felis. Suspendisse nec turpis efficitur, interdum dolor sed, finibus mi. Cras pretium ligula et nunc malesuada, quis sodales urna',
+              joinus_required_header: 'Required (Fully REMOTE due to COVID-19)',
+              joinus_required_description_1: 'Attend weekly MTG (Thu P2)',
+              joinus_required_description_2: 'Attend Nakazawa Lab Lecture (Thu P3 -4)',
+              joinus_eligibilty_header: 'Eligibilty',
+              joinus_eligibilty_description_1: '1st to 3rd year undergraduate students',
+              joinus_eligibilty_description_2: 'We usually do not take 4th year students',
+              contact_address: 'Keio University Shonan Fujisawa Campus Δ South Room-213',
+            }
+          },
+          ja: {
+            translation: {
+              nav_language: '🇯🇵',
+              about_section_header: 'KGについて',
+              about_wellcomp: 'WellComp研究グループは、我々人間生活の身体的、精神的、そして社会的な側面におけるウェルビーイングに貢献するコンピューティングの実現を目指し、各種技術の研究開発を行っています。モバイル/ウェアラブル/参加型などの各種センシング技術や、機械学習にもとづくデータ解析、情報提示やアクチュエーションといった各種の技術を用いて、ユーザのコンテキストを捉えて理解し、より良い状態に向けた行動変容を可能にする基盤システムやサービス、アプリケーションの開発を行っています。',
+              projects_header_1: 'プロジェクト １',
+              projects_description_1: 'ロレム・イプサムの嘆き、トマト大好き学部のエリット、しかし時と活力、そのような労働と悲しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分注を邪魔されたする人が来ます。クピダタットのつるの痛みになりたい宿題に、批判されてきたら痛み、マグナ逃亡しても結果の喜びを生成しません。先例クピダタットブラックは先例していない',
+              projects_header_2: 'プロジェクト ２',
+              projects_description_2: 'ロレム・イプサムの嘆き、トマト大好き学部のエリット、しかし時と活力、そのような労働と悲しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分注を邪魔されたする人が来ます。クピダタットのつるの痛みになりたい宿題に、批判されてきたら痛み、マグナ逃亡しても結果の喜びを生成しません。先例クピダタットブラックは先例していない',
+              projects_header_3: 'プロジェクト ３',
+              projects_description_3: 'ロレム・イプサムの嘆き、トマト大好き学部のエリット、しかし時と活力、そのような労働と悲しみ、ブラインド行うにはいくつかの重要な事柄に座ります。長年にわたり、私は学区と長寿であれば、そのような刺激の取り組み、彼女のうち、運動の利点を分注を邪魔されたする人が来ます。クピダタットのつるの痛みになりたい宿題に、批判されてきたら痛み、マグナ逃亡しても結果の喜びを生成しません。先例クピダタットブラックは先例していない',
+              joinus_required_header: '活動内容 (オンライン)',
+              joinus_required_description_1: 'KGミーティングへの参加 (木曜２限)',
+              joinus_required_description_2: '中澤研究会への参加 (木曜３-４限)',
+              joinus_eligibilty_header: '期待する学生',
+              joinus_eligibilty_description_1: '学部 1・2・3年生',
+              joinus_eligibilty_description_2: '中澤研究室では4年生からの履修は基本的に受け付けていません',
+              contact_address: '慶應義塾大学湘南藤沢キャンパス Δ館 南213',
+            }
+          }
+        }
+      });
+
+    $(function () {
+      updateContent();
+    });
+
+    function changeLng(lng) {
+      i18next.changeLanguage(lng);
+    }
+
+    function updateContent() {
+      jqueryI18next.init(i18next, $);
+      $('#main-nav').localize();
+      $('#about').localize();
+      $('#joinus').localize();
+      $('#projects').localize();
+      $('#contact').localize();
+    }
+
+    i18next.on('languageChanged', () => {
+      updateContent();
+    });
+
+    $('#year').text(new Date().getFullYear());
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
