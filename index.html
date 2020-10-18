@@ -5,6 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives." />
+  <meta name="keywords"
+    content="KG, RG, SFC, 湘南藤沢キャンパス, Keio, WellComp, Jin Nakazawa, 慶應義塾大学, 中澤仁, 中澤研究室, well-being" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
+  <link rel="manifest" href="assets/fav/site.webmanifest">
+  <link rel="mask-icon" href="assets/fav/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- ogp -->
+  <meta property="og:title" content="WellComp - Jin Nakazawa Lab">
+  <meta property="og:site_name" content="WellComp">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ht.sfc.keio.ac.jp/wellcomp/">
+  <meta property="og:description"
+    content="The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives.">
+  <meta property="og:image" content="https://www.ht.sfc.keio.ac.jp/wellcomp/assets/images/ogp.jpg">
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@JNLab_KeioSFC">
+  <meta name="twitter:site" content="@JNLab_KeioSFC" />
+  <meta name="twitter:title" content="WellComp - Jin Nakazawa Lab">
+  <meta name="twitter:description"
+    content="The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives.">
+  <meta name="twitter:image:src" content="https://www.ht.sfc.keio.ac.jp/wellcomp/assets/images/ogp.jpg">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -21,6 +52,12 @@
 </head>
 
 <body>
+  <div style="display: none" id="hideAll">&nbsp;</div>
+
+  <script type="text/javascript">
+    document.getElementById("hideAll").style.display = "block";
+  </script>
+
   <nav class="navbar navbar-expand-lg my-nav" id="main-nav">
     <a class="navbar-brand" href="#">WellComp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -61,18 +98,13 @@
   <section id="hero">
     <div class="video-header wrap">
       <div class="fullscreen-video-wrap d-none d-md-block">
-
-
         <video src="https://www.dropbox.com/s/z77vmv1plds0p53/hero.mp4?raw=1" autoplay loop></video>
       </div>
-
       <div class="fullscreen-video-wrap d-block d-md-none">
         <img src="assets/images/hero_sp.jpg" alt="Delta">
       </div>
-
-
       <div class="header-overlay">
-        <div class="header-content" data-aos="zoom-in" data-aos-delay="900" data-aos-offset="0" data-aos-once="true">
+        <div class="header-content" data-aos="zoom-in" data-aos-delay="2000" data-aos-offset="0" data-aos-once="true">
           <img class="header-logo" src="assets/images/jinlogo.png" alt="Jin Nakazawa Lab Logo" width="300" height="54">
           <h1>WellComp</h1>
         </div>
@@ -303,6 +335,7 @@
 
   <script>
     AOS.init();
+    window.onload = function () { document.getElementById("hideAll").style.display = "none"; }
 
     i18next
       .use(i18nextBrowserLanguageDetector)
