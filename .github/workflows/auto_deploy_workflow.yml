@@ -11,7 +11,7 @@ jobs:
     - name: dali server ssh connection
       uses: appleboy/ssh-action@master
       with:
-        host: dali.ht.sfc.keio.ac.jp
+        host: ${{ secrets.HOST }}
         username: wellcomp
         key: ${{ secrets.WELLCOMP_SECRET }}
         port: 22
