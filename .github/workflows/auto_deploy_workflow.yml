@@ -13,7 +13,7 @@ jobs:
       with:
         host: dali.ht.sfc.keio.ac.jp
         username: wellcomp
-        password: ${{ secrets.WELLCOMP_SECRET }}
+        key: ${{ secrets.WELLCOMP_SECRET }}
         port: 22
         script: |
           cd /home/www/public_html/rgs/wellcomp
