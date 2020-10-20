@@ -16,7 +16,8 @@ jobs:
         password: ${{ secrets.WELLCOMP_SECRET }}
         port: 22
         script: |
-        cd /home/www/public_html/rgs/wellcomp
-        git status
+          cd /home/www/public_html/rgs/wellcomp
+          git pull origin master
+          git status
         
         
