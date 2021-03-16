@@ -1,15 +1,11 @@
 # WellComp LP
 
-## 公開手順
-GitHub Actions(CI/CD)が設定されているため`master`に`push`すれば自動的に公開されます。  
+## 公開手順 (jn.sfc.keio.ac.jp)
 変更を確認する際ブラウザーのキャッシュを消すように。
-
-##### 手動 (ht.sfc.keio.ac.jp)
-CIが壊れた場合のみ
 1. daliにssh
-2. rootに切り変える `su -`
-3. `/home/www/public_html/rgs/wellcomp`へcd
-4. `git pull origin master`
+2. jnにssh
+3. `/var/www/kg/wellcomp`へcd
+4. `git pull origin master` (sudoが必要です)
 
 ## メンテナンス
 #### メンバー追加
