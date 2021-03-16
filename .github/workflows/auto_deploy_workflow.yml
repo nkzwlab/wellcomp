@@ -18,10 +18,10 @@ jobs:
         script: |
           ssh kenty@jn.sfc.keio.ac.jp
 	  yes
-	  kenty
+	  ${{ secrets.KENTY_PASS }}
           cd /var/www/kg/wellcomp/
           sudo git pull origin master
-	  kenty
+	  ${{ secrets.KENTY_PASS }}
 
         
         
