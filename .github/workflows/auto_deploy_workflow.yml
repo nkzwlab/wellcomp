@@ -12,7 +12,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
-        username: wellcomp
+        username: kenty
         key: ${{ secrets.WELLCOMP_SECRET }}
         port: 22
         script: |
