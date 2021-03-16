@@ -16,8 +16,12 @@ jobs:
         key: ${{ secrets.WELLCOMP_SECRET }}
         port: 22
         script: |
-          cd /home/www/public_html/rgs/wellcomp
-          git pull origin master
-          git status
+          ssh kenty@jn.sfc.keio.ac.jp
+	  yes
+	  kenty
+          cd /var/www/kg/wellcomp/
+          sudo git pull origin master
+	  kenty
+
         
         
