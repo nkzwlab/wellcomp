@@ -2,9 +2,9 @@
 
 ## 公開手順 (jn.sfc.keio.ac.jp)
 変更を確認する際ブラウザーのキャッシュを消すように。
-1. daliにssh
-2. jnにssh
-3. `/var/www/kg/wellcomp`へcd
+1. JNNET VPNに接続
+2. `jn.sfc.keio.ac.jp`にssh
+3. `/srv/www/wellcomp`へcd
 4. `git pull origin master` (sudoが必要です)
 
 ## メンテナンス
