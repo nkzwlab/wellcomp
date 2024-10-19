@@ -1,4 +1,4 @@
-# WellComp LP
+# WellComp HP
 
 ## 公開手順 (jn.sfc.keio.ac.jp)
 変更を確認する際ブラウザーのキャッシュを消すように。
