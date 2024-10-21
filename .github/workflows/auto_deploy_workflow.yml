@@ -19,7 +19,7 @@ jobs:
           sudo wg-quick up wg0
 
       - name: Compress files for upload
-        run: tar -czf site.tar.gz .
+        run: tar --exclude='.git' --exclude='site.tar.gz' -czf site.tar.gz .
 
       - name: Deploy file
         run: |
