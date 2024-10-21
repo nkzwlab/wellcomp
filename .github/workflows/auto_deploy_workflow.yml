@@ -7,19 +7,26 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Install WireGuard
-      run: |
-        sudo apt update
-        sudo apt install -y wireguard openresolv
+      - name: Install WireGuard
+        run: |
+          sudo apt update
+          sudo apt install -y wireguard openresolv
 
-    - name: Setup WireGuard
-      run: |
-        echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
-        sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
-        sudo wg-quick up wg0
+      - name: Setup WireGuard
+        run: |
+          echo "${{ secrets.VPN_CONF }}" | base64 -d > /tmp/wg0.conf
+          sudo mv /tmp/wg0.conf /etc/wireguard/wg0.conf
+          sudo wg-quick up wg0
 
-    - name: Deploy file
-      run: |
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
-        chmod 600 /tmp/id_rsa
-        scp -i /tmp/id_rsa -o StrictHostKeyChecking=no -r . wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp:/srv/www/wellcomp
+      - name: Compress files for upload
+        run: tar -czf site.tar.gz .
+
+      - name: Deploy file
+        run: |
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > /tmp/id_rsa
+          chmod 600 /tmp/id_rsa
+          scp -i /tmp/id_rsa -o StrictHostKeyChecking=no site.tar.gz wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp:/srv/www/wellcomp
+
+      - name: Extract files on the server
+        run: |
+          ssh -i /tmp/id_rsa -o StrictHostKeyChecking=no wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp "cd /srv/www/wellcomp && tar -xzf site.tar.gz && rm site.tar.gz"
