@@ -25,7 +25,7 @@ jobs:
 
       - name: SSH to the server and pull the code
         run: |
-          ssh -i /tmp/id_rsa -o StrictHostKeyChecking=no wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp
-          cd /srv/www/wellcomp
-          git pull
-          exit
+          ssh -i /tmp/id_rsa -o StrictHostKeyChecking=no wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp << 'EOF'
+            cd /srv/www/wellcomp || exit 1
+            git pull || exit 1
+          EOF
