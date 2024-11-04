@@ -162,7 +162,7 @@ html, body {
 
 #projects .custom-shape-divider-bottom-1602937784 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
