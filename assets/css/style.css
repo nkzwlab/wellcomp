@@ -180,7 +180,7 @@ html, body {
 }
 
 #projects .custom-shape-divider-bottom-1602937784 .shape-fill {
-    fill: #55C5C1;
+    fill: #EEEEEE;
 }
 
 #projects .cards-all {
@@ -214,6 +214,41 @@ html, body {
     color: #00254d;
     font-family: 'Cabin';
     font-weight: 400;
+}
+
+#publications {
+    padding-top: 50px;
+    background-color: #EEEEEE;
+}
+
+#publications .section-text {
+    margin-bottom: 130px;
+}
+
+#publications .section-text p {
+    font-size: 12px;
+}
+
+#publications .custom-shape-divider-bottom-1602938894 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color: #EEEEEE;
+}
+
+#publications .custom-shape-divider-bottom-1602938894 svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 131px;
+}
+
+#publications .custom-shape-divider-bottom-1602938894 .shape-fill {
+    fill: #55C5C1;
 }
 
 #members {
@@ -334,17 +369,20 @@ html, body {
     line-height: 40px;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     .header-content h1 {
         font-size: 40px;
     }
+
     .header-content p {
         font-size: 1rem;
     }
+
     #hero .header-logo {
         width: 200px;
         height: 36px;
     }
+
     #hero .header-content h1 {
         font-size: 35px;
     }
