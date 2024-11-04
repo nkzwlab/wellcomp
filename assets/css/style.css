@@ -1,3 +1,10 @@
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .navbar {
     margin-top: 50px;
     margin-left: 40px;
@@ -156,7 +163,7 @@
 
 #projects .custom-shape-divider-bottom-1602937784 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
