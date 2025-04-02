@@ -1,7 +1,7 @@
 # WellComp HP
 
 ## 公開手順 (jn.sfc.keio.ac.jp)
-GitHub Actions (CI/CD) が設定されているため、Actionsから `Deployment Workflow` → `Run Workflow` を選択することで、自動で公開されます。
+GitHub Actions (CI/CD) が設定されているため、Actionsから `Deployment Workflow` → `Run Workflow` を選択することで、自動的に公開されます。
 
 #### 手動でデプロイする
 変更を確認する際ブラウザーのキャッシュを消すように。
