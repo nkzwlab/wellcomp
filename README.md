@@ -1,10 +1,12 @@
 # WellComp HP
 
 ## 公開手順 (jn.sfc.keio.ac.jp)
-GitHub Actions (CI/CD) が設定されているため、Actionsから `Deployment Workflow` → `Run Workflow` を選択することで、自動的に公開されます。
+#### 自動でデプロイする
+- GitHub Actions (CI/CD) が設定されているため、Actionsから `Deployment Workflow` → `Run Workflow` を選択することで、自動的に公開されます。
 
 #### 手動でデプロイする
-変更を確認する際ブラウザーのキャッシュを消すように。
+- GitHub Actions が動作しない場合の手順です。
+
 1. JNNET VPNに接続
 2. jnにデプロイ用ユーザーでssh (`ssh wellcomp-hp-deploy@www.jn.sfc.keio.ac.jp`)
 3. `/srv/www/wellcomp`へcd
