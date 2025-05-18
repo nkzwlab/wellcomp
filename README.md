@@ -2,7 +2,8 @@
 
 ## 公開手順 (jn.sfc.keio.ac.jp)
 #### 自動でデプロイする
-- GitHub Actions (CI/CD) が設定されているため、Actionsから `Deployment Workflow` → `Run Workflow` を選択することで、自動的に公開されます。
+- GitHub Actions (CI/CD) が設定されているため、masterにpushすることで、自動的に公開されます。
+- または、Actionsタブから `Deployment Workflow` → `Run Workflow` を選択することで手動実行できます。
 
 #### 手動でデプロイする
 - GitHub Actions が動作しない場合の手順です。
