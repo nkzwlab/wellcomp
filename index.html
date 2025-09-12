@@ -22,10 +22,10 @@
     <meta property="og:title" content="WellComp - Nakazawa and Okoshi Lab">
     <meta property="og:site_name" content="WellComp">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ht.sfc.keio.ac.jp/wellcomp/">
+    <meta property="og:url" content="https://www.jn.sfc.keio.ac.jp/wellcomp/">
     <meta property="og:description"
           content="The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives.">
-    <meta property="og:image" content="https://www.ht.sfc.keio.ac.jp/wellcomp/assets/images/ogp.png">
+    <meta property="og:image" content="https://www.jm.sfc.keio.ac.jp/wellcomp/assets/images/ogp.png">
     <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@JNLab_KeioSFC">
@@ -33,7 +33,7 @@
     <meta name="twitter:title" content="WellComp - Nakazawa and Okoshi Lab">
     <meta name="twitter:description"
           content="The Well-being Computing (WellComp) research group aims to invent new computing that contributes to people’s well-being in terms of physical, mental, and social aspects of their lives.">
-    <meta name="twitter:image:src" content="https://www.ht.sfc.keio.ac.jp/wellcomp/assets/images/ogp.jpg">
+    <meta name="twitter:image:src" content="https://www.jn.sfc.keio.ac.jp/wellcomp/assets/images/ogp.jpg">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -42,21 +42,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
-    <script src="assets/js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
-    <script src="https://unpkg.com/i18next@19.0.0/dist/umd/i18next.js"></script>
-    <script src="assets/js/i18nextBrowserLanguageDetector.min.js"></script>
-    <script src="assets/js/jquery-i18next.min.js"></script>
-    <script src="assets/js/aos.js"></script>
     <title>WellComp - Nakazawa and Okoshi Lab</title>
 </head>
 
 <body>
-<div style="display: none" id="hideAll">&nbsp;</div>
-
-<script type="text/javascript">
-    document.getElementById("hideAll").style.display = "block";
-</script>
-
 <nav class="navbar navbar-expand-lg my-nav" id="main-nav">
     <a class="navbar-brand" href="#">WellComp</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -435,6 +424,12 @@
     </div>
 </section>
 
+<script src="assets/js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+<script src="https://unpkg.com/i18next@19.0.0/dist/umd/i18next.js"></script>
+<script src="assets/js/i18nextBrowserLanguageDetector.min.js"></script>
+<script src="assets/js/jquery-i18next.min.js"></script>
+<script src="assets/js/aos.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
 </script>
@@ -447,9 +442,6 @@
 
 <script>
     AOS.init();
-    window.onload = function () {
-        document.getElementById("hideAll").style.display = "none";
-    }
 
     i18next
         .use(i18nextBrowserLanguageDetector)
